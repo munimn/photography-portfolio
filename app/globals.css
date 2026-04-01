@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FAF7F2;
+  color: #2C1810;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #C9A98E;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B8704D;
+}
+
+/* Selection */
+::selection {
+  background: #B8704D;
+  color: #FAF7F2;
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-terracotta text-cream px-8 py-4 font-lato text-xs tracking-[0.2em] uppercase hover:bg-terracotta-dark transition-colors duration-300;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 border border-espresso text-espresso px-8 py-4 font-lato text-xs tracking-[0.2em] uppercase hover:bg-espresso hover:text-cream transition-all duration-300;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center gap-2 border border-cream/60 text-cream px-8 py-4 font-lato text-xs tracking-[0.2em] uppercase hover:bg-cream/10 transition-all duration-300;
+  }
+  .section-label {
+    @apply font-lato text-xs tracking-[0.3em] uppercase text-taupe;
+  }
+  .section-title {
+    @apply font-playfair text-4xl md:text-5xl font-normal text-espresso leading-tight;
+  }
+  .container-main {
+    @apply max-w-7xl mx-auto px-6 md:px-12;
+  }
+}
