@@ -9,8 +9,8 @@ export const metadata = {
 const details = [
   {
     label: "Email",
-    value: "nafis@fujixmunsnaps.com",
-    href: "mailto:nafis@fujixmunsnaps.com",
+    value: "fujixmunsnaps@gmail.com",
+    href: "mailto:fujixmunsnaps@gmail.com",
   },
   {
     label: "Instagram",
